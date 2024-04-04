@@ -7,8 +7,14 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
         <ApplicationIcon>WowCS.ico</ApplicationIcon>
-        <SignAssembly>true</SignAssembly>
-        <PublicSign>true</PublicSign>
+        <PublicSign>false</PublicSign>
+        <Authors>Sébastien Duruz</Authors>
+        <Description>A simple overlay used to focus the desired World of Warcraft client with a compact interface</Description>
+        <Copyright>Sébastien Duruz</Copyright>
+        <PackageProjectUrl>https://github.com/SebastienDuruz/WowSwitcher</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/SebastienDuruz/WowSwitcher</RepositoryUrl>
+        <RepositoryType>Github</RepositoryType>
+        <PackageTags>World of Warcraft</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
