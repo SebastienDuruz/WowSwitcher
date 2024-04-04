@@ -10,9 +10,8 @@ public class ClientsDiscoverer
 
     public void RefreshProcessList()
     {
-        Process[] processes = Process.GetProcesses();
         WowProcesses.Clear();
-        foreach (Process process in processes)
+        foreach (Process process in Process.GetProcesses())
         {
             if (process.MainWindowHandle == IntPtr.Zero)
                 continue;

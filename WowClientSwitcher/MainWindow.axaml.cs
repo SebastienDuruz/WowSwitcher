@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Runtime.InteropServices;
-using System.Security.Cryptography;
 using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls;
@@ -46,7 +44,7 @@ public partial class MainWindow : Window
     private void InitializeTimer()
     {
         _timer = new DispatcherTimer();
-        _timer.Interval = TimeSpan.FromSeconds(5);
+        _timer.Interval = TimeSpan.FromSeconds(SettingsReader.GetInstance.UserSettingsValues.RefreshTimeout);
         _timer.Tick += async (sender, e) => await RefreshWowClients();
         _timer.Start();
     }

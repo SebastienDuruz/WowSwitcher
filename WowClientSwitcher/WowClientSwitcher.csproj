@@ -6,6 +6,9 @@
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <ApplicationIcon>WowCS.ico</ApplicationIcon>
+        <SignAssembly>true</SignAssembly>
+        <PublicSign>true</PublicSign>
     </PropertyGroup>
 
     <ItemGroup>

@@ -42,7 +42,6 @@ public sealed class SettingsReader
             }
             catch (Exception ex)
             {
-                // Reset the settings by recreating a file
                 WriteUserSettings();
                 UserSettingsValues = new UserSettings();
             }
@@ -58,7 +57,7 @@ public sealed class SettingsReader
     {
         try
         {
-            File.WriteAllText(FullConfigPath, JsonConvert.SerializeObject(UserSettingsValues));
+            File.WriteAllText(FullConfigPath, JsonConvert.SerializeObject(UserSettingsValues, Formatting.Indented));
         }
         catch (Exception ex)
         {
